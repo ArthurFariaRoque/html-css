@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*SELETORES PERSONALIZADOS
+# = id
+. = class
+: = pseudo-class
+:: = pseudo-element
+> = clildren
+*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+li{
+    font-size: 22px;
+}
+a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+a:active{
+    color: yellowgreen;
+}
+.destaque{
+    color: green;
+}
+.destaque::before{
+    content: '🠖';
+}
+.destaque::after{
+    content: '🠔';
+}
